@@ -1,6 +1,6 @@
-import { OrderSummary } from "components/OrderSummary";
+import { Order } from "components/Order";
 
 function App() {
-  return <OrderSummary />;
+  return <Order />;
 }
 export default App;
