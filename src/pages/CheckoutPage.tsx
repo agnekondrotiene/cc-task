@@ -1,7 +1,7 @@
 import { OrderDetailsSection } from "components/checkout/OrderDetailsSection";
 import { GuaranteeBox } from "components/checkout/summary/GuaranteeBox";
 import { CheckoutSummary } from "components/checkout/summary/CheckoutSummary";
-import { VariantsDetail } from "components/checkout/variants/VariantsDetail";
+import { CheckoutVariants } from "components/checkout/variants/CheckoutVariants";
 
 export const CheckoutPage = () => {
   return (
@@ -9,7 +9,7 @@ export const CheckoutPage = () => {
       <div className="w-full pt-[57px] px-[92px] pb-[92px]">
         <div className="w-[640px] ml-auto">
           <OrderDetailsSection title="variants">
-            <VariantsDetail />
+            <CheckoutVariants />
           </OrderDetailsSection>
 
           <OrderDetailsSection title="payment and shipping">
