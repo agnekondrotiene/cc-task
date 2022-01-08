@@ -1,6 +1,11 @@
-import { Order } from "components/Order";
+import { CheckoutPage } from "pages/CheckoutPage";
 
 function App() {
-  return <Order />;
+  return (
+    <div className="bg-B1">
+      <CheckoutPage />
+    </div>
+  );
 }
+
 export default App;

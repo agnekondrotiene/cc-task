@@ -1,6 +1,6 @@
 import { ReactComponent as Iconx3 } from "assets/productIconx3.svg";
 
-export const TotalInfo = () => {
+export const CheckoutSummary = () => {
   return (
     <div>
       <div className="flex justify-between items-center border-b border-solid border-Gray5 pb-[30px]">
