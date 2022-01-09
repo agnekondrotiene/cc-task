@@ -1,18 +1,24 @@
-import { ReactComponent as Iconx3 } from "assets/productIconx3.svg";
+import { Product } from "types/product";
+import { formatCurrency } from "utils";
+import { ProductInfo } from "../ProductInfo";
 
-export const CheckoutSummary = () => {
+type Props = {
+  product: Product;
+};
+
+export const CheckoutSummary = ({ product }: Props) => {
   return (
     <div>
       <div className="flex justify-between items-center border-b border-solid border-Gray5 pb-[30px]">
-        <div className="flex justify-between items-center gap-[15px]">
-          <Iconx3 />
-          <p className="font-roboto font-light not-italic text-normal text-Gray1 leading-[24px]">
-            <strong className="font-black">3x</strong> CoreProduct®
-          </p>
-        </div>
+        <ProductInfo
+          image={product.image}
+          name={product.name}
+          quantity={product.quantity}
+          size="large"
+        />
         <div>
           <span className="font-roboto not-italic font-normal text-normal leading-[26px] text-Black">
-            $39.99
+            {formatCurrency(product.price)}
           </span>
         </div>
       </div>
@@ -25,7 +31,7 @@ export const CheckoutSummary = () => {
             USD
           </span>
           <span className="font-roboto not-italic font-black leading-[28px] text-large1 text-Gray1">
-            $39.99
+            {formatCurrency(product.price)}
           </span>
         </div>
       </div>
