@@ -9,7 +9,7 @@ type Props = React.DetailedHTMLProps<
 export const Button = ({ width = "auto", title, ...buttonProps }: Props) => {
   return (
     <button
-      className={`w-${width} px-11 py-3 block box-border bg-M1 shadow-button rounded-[3px] font-roboto not-italic font-black leading-[24px] uppercase text-small2 text-White tracking-[.07em]`}
+      className={`w-${width} py-[16px] mb-[24px] block box-border bg-GreenButton shadow-button rounded-[3px] font-sofiapro not-italic font-normal text-small2 text-White leading-[24px] uppercase  tracking-[.07em]`}
       {...buttonProps}
     >
       {title}
