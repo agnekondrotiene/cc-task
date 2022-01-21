@@ -21,15 +21,15 @@ export const CheckoutPage = () => {
   // }
 
   return (
-    <div className={`grid grid-cols-[1.45fr_1fr]`}>
+    <div className={`grid grid-cols-1 tablet:grid-cols-[1.45fr_1fr]`}>
       <div className="w-full pt-[57px] px-[92px] pb-[92px]">
-        <div className="w-[640px] ml-auto">
+        <div className=" sm:w-full ml-auto">
           <OrderDetailsSection title="payment and shipping">
             <Section
               heading="Customer Information"
               subheading="Fields marked as (*) are required."
             >
-              <div className="flex justify-between gap-[16px]">
+              <div className="flex flex-col tablet:flex-row justify-between gap-[16px]">
                 <Input placeholder="First name*" />
                 <Input placeholder="Last name*" />
               </div>
@@ -37,7 +37,7 @@ export const CheckoutPage = () => {
             <Section heading="Shipping Address">
               <div className="flex flex-col gap-y-[16px]">
                 <Input placeholder="Address*" />
-                <div className="flex justify-between gap-[16px]">
+                <div className="flex flex-col tablet:flex-row tablet:justify-between gap-[16px]">
                   <Dropdown
                     name="Region/State*"
                     id="Region/State*"
@@ -67,7 +67,7 @@ export const CheckoutPage = () => {
                 </div>
                 <div className="flex flex-col gap-[16px] bg-Gray7 py-[17px] px-[15px] border-t border-t-Gray5">
                   <Input placeholder="Card number" />
-                  <div className="flex justify-start gap-[16px] w-2/5">
+                  <div className="flex flex-row justify-between tablet:justify-start gap-[16px] w-full tablet:w-2/5">
                     <Input placeholder="MM/YY" />
                     <Input placeholder="CVV" />
                   </div>

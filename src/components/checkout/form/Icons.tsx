@@ -8,16 +8,16 @@ export const Icons = () => {
   return (
     <div className="flex justify-center">
       <div>
-        <NortonIcon />
+        <NortonIcon className="h-[40px] w-[70px] tablet:h-[49px] tablet:w-[91px]" />
       </div>
       <div>
-        <VeriSignIcon />
+        <VeriSignIcon className="h-[40px] w-[70px] tablet:h-[49px] tablet:w-[91px]" />
       </div>
       <div>
-        <McAfeeIcon />
+        <McAfeeIcon className="h-[40px] w-[70px] tablet:h-[49px] tablet:w-[91px]" />
       </div>
       <div>
-        <ComodoIcon />
+        <ComodoIcon className="h-[40px] w-[70px] tablet:h-[49px] tablet:w-[91px]" />
       </div>
     </div>
   );
